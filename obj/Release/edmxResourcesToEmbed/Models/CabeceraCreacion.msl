@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="CabeceraModelStoreContainer" CdmEntityContainer="UtravelEntities2">
+    <EntitySetMapping Name="CabeceraPreCompras">
+      <EntityTypeMapping TypeName="CabeceraModel.CabeceraPreCompra">
+        <MappingFragment StoreEntitySet="CabeceraPreCompra">
+          <ScalarProperty Name="IDorden" ColumnName="IDorden" />
+          <ScalarProperty Name="FechaCreacion" ColumnName="FechaCreacion" />
+          <ScalarProperty Name="FechaViaje" ColumnName="FechaViaje" />
+          <ScalarProperty Name="IDUser" ColumnName="IDUser" />
+          <ScalarProperty Name="Carros" ColumnName="Carros" />
+          <ScalarProperty Name="Personas" ColumnName="Personas" />
+          <ScalarProperty Name="HoraViaje" ColumnName="HoraViaje" />
+          <ScalarProperty Name="CantidadPuntos" ColumnName="CantidadPuntos" />
+          <ScalarProperty Name="MontoTotal" ColumnName="MontoTotal" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

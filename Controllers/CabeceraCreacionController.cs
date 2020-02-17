@@ -9,6 +9,7 @@ namespace ApiUtravel.Controllers
 {
     public class CabeceraCreacionController : ApiController
     {
+        
         public IHttpActionResult Add(Models.Request.CreacionCabecera cabecera)
         {
             using (Models.UtravelEntities2 db = new Models.UtravelEntities2())
@@ -23,8 +24,10 @@ namespace ApiUtravel.Controllers
                     registro.HoraViaje = cabecera.HoraViaje;
                     db.CabeceraPreCompras.Add(registro);
                     db.SaveChanges();
+                    
                 }
-                return Json(new { message = "creado" });
+                
+                return Json(new { message = "Inicia la aventura" });
             }
         }
     }

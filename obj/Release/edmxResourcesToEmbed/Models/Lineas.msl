@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="UtravelModelStoreContainer" CdmEntityContainer="UtravelEntities8">
+    <EntitySetMapping Name="LineasPreCompras">
+      <EntityTypeMapping TypeName="UtravelModel.LineasPreCompra">
+        <MappingFragment StoreEntitySet="LineasPreCompra">
+          <ScalarProperty Name="IDorden" ColumnName="IDorden" />
+          <ScalarProperty Name="IDproducto" ColumnName="IDproducto" />
+          <ScalarProperty Name="Cantidad" ColumnName="Cantidad" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

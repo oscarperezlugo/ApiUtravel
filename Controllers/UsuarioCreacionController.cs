@@ -9,6 +9,7 @@ namespace ApiUtravel.Controllers
 {
     public class UsuarioCreacionController : ApiController
     {
+        int iD;
         public IHttpActionResult Add(Models.Request.UsuarioRequest usuario)
         {
             using(Models.UtravelEntities1 db = new Models.UtravelEntities1())
@@ -24,8 +25,10 @@ namespace ApiUtravel.Controllers
                     registro.FechaRegistro = DateTime.Now;
                     db.Usuarios.Add(registro);
                     db.SaveChanges();
+                    
                 }
-                return Json(new { message = registro.Nombre.ToString() });
+                
+                return Json(new { message = registro.Nombre.ToString(), id = iD });
             }
         }
     }

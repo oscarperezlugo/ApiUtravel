@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="CabeceraModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="CabeceraPreCompra">
+    <Key>
+      <PropertyRef Name="IDorden" />
+    </Key>
+    <Property Name="IDorden" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="FechaCreacion" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="FechaViaje" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="IDUser" Type="Int32" Nullable="false" />
+    <Property Name="Carros" Type="Int32" />
+    <Property Name="Personas" Type="Int32" />
+    <Property Name="HoraViaje" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CantidadPuntos" Type="Int32" />
+    <Property Name="MontoTotal" Type="Double" />
+  </EntityType>
+  <EntityContainer Name="UtravelEntities2" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="CabeceraPreCompras" EntityType="Self.CabeceraPreCompra" />
+  </EntityContainer>
+</Schema>

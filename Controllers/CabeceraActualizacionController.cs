@@ -20,7 +20,7 @@ namespace ApiUtravel.Controllers
                     myOrder.CantidadPuntos = cabecera.CantidadPuntos;
                     db.SaveChanges();
                 }
-                return Json(new { message = "actualiado" });
+                return Json(new { message = "Actualizado" });
             }
         }
     }

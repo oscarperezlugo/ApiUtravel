@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web.Http;
+using System.Web.Http.OData.Builder;
+using System.Web.Http.OData.Extensions;
+using ApiUtravel.Models;
 
 namespace ApiUtravel
 {
@@ -9,6 +12,7 @@ namespace ApiUtravel
     {
         public static void Register(HttpConfiguration config)
         {
+            
             // Web API configuration and services
 
             // Web API routes
